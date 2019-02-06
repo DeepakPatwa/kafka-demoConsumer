@@ -17,8 +17,7 @@ public class KafkaConsumer {
 
 //    @KafkaListener(topics = "Kafka_Example_json", group = "group_json",
 //            containerFactory = "userKafkaListenerFactory")
-    @KafkaListener(topics = "deepak", group = "group_json",
-            containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = "deepak_json", group = "group_json", containerFactory = "userKafkaListenerFactory")
     public void consumeJson(User1 user) {
         System.out.println("yoyoyoyoyo");
         System.out.println("Consumed JSON Message: " + user);
